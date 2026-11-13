@@ -1,0 +1,2 @@
+// Keep anchor navigation usable with or without JavaScript.
+document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',()=>{document.querySelectorAll('nav a').forEach(item=>item.removeAttribute('aria-current'));link.setAttribute('aria-current','location');}));
